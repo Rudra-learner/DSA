@@ -1,14 +1,10 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        d={}
-        for i in range(len(nums)):
-            diff=target-nums[i]
-
-            if diff in d:
-                return(d[diff],i)
-            d[nums[i]]=i
-
-        
+        n = len(nums)
+        for i in range(n):
+            for j in range(i):
+                if nums[i] + nums[j] == target:
+                    return [i,j]
 
         
         
