@@ -5,8 +5,7 @@ class Solution(object):
         for ch in s:
             if ch.isalnum()==True:
                 q+=ch
-            else:
-                continue
+            
         
         if(q==q[::-1]):
             return True
